@@ -4,7 +4,7 @@ import Task3 from "./task 3/Task3";
 
 const App = () => {
   const [data, setData] = useState([]);
-  const [allData, setAllData] = useState([]); // store original data
+  const [allData, setAllData] = useState([]); 
   const [search, setSearch] = useState("");
 
   useEffect(() => {
