@@ -14,7 +14,7 @@ const App = () => {
   function apicall() {
     axios("https://jsonplaceholder.typicode.com/users").then((res) => {
       setData(res.data);
-      setAllData(res.data); // save original data
+      setAllData(res.data); 
     });
   }
 
@@ -23,7 +23,7 @@ const App = () => {
     setSearch(value);
 
     if (!value.trim()) {
-      // if input is empty, reset to full data
+    
       setData(allData);
     } else {
       const filtered = allData.filter((item) =>
